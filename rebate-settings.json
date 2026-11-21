@@ -1,0 +1,937 @@
+{
+  "notice": "Processed by Roof & Reserve (roofandreserve.com) from public AEMO and market data. Copyright Roof & Reserve. Provided for the Roof & Reserve website. Republishing or commercial reuse requires written permission.",
+  "about": "Rebate settings shared by the battery rebate calculator and the solar and battery quote checker on roofandreserve.com. Edit this file when the Clean Energy Regulator changes the settings; both pages pick it up from the public feed within the hour.",
+  "as_of": "2026-11-06",
+  "sources": [
+    "Clean Energy Regulator, battery STC factor schedule and amended regulations (cer.gov.au)",
+    "Clean Energy Regulator, postcode zone ratings and zones for solar panel systems (cer.gov.au)"
+  ],
+  "stc": {
+    "installer_price": 37,
+    "installer_low": 33,
+    "note": "installer_price is the typical price installers pass on per STC, used for the headline figures. installer_low is the bottom of the range the quote checker accepts; the top is the market price in stc-price.json."
+  },
+  "battery": {
+    "min_kwh": 5,
+    "max_counted_kwh": 50,
+    "tiers": [
+      {
+        "to_kwh": 14,
+        "share": 1
+      },
+      {
+        "to_kwh": 28,
+        "share": 0.6
+      },
+      {
+        "to_kwh": 50,
+        "share": 0.15
+      }
+    ],
+    "periods": [
+      {
+        "start": "2025-07-01",
+        "end": "2025-12-31",
+        "factor": 9.3,
+        "tiered": false
+      },
+      {
+        "start": "2026-01-01",
+        "end": "2026-04-30",
+        "factor": 8.4,
+        "tiered": false
+      },
+      {
+        "start": "2026-05-01",
+        "end": "2026-12-31",
+        "factor": 6.8,
+        "tiered": true
+      },
+      {
+        "start": "2027-01-01",
+        "end": "2027-06-30",
+        "factor": 5.7,
+        "tiered": true
+      },
+      {
+        "start": "2027-07-01",
+        "end": "2027-12-31",
+        "factor": 5.2,
+        "tiered": true
+      },
+      {
+        "start": "2028-01-01",
+        "end": "2028-06-30",
+        "factor": 4.6,
+        "tiered": true
+      },
+      {
+        "start": "2028-07-01",
+        "end": "2028-12-31",
+        "factor": 4.1,
+        "tiered": true
+      },
+      {
+        "start": "2029-01-01",
+        "end": "2029-06-30",
+        "factor": 3.6,
+        "tiered": true
+      },
+      {
+        "start": "2029-07-01",
+        "end": "2029-12-31",
+        "factor": 3.1,
+        "tiered": true
+      },
+      {
+        "start": "2030-01-01",
+        "end": "2030-06-30",
+        "factor": 2.6,
+        "tiered": true
+      },
+      {
+        "start": "2030-07-01",
+        "end": "2030-12-31",
+        "factor": 2.1,
+        "tiered": true
+      }
+    ],
+    "rounding": "down"
+  },
+  "solar": {
+    "max_kw": 100,
+    "deeming_years": {
+      "2025": 6,
+      "2026": 5,
+      "2027": 4,
+      "2028": 3,
+      "2029": 2,
+      "2030": 1
+    },
+    "zones": [
+      {
+        "from": 0,
+        "to": 799,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 800,
+        "to": 853,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 854,
+        "to": 854,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 855,
+        "to": 861,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 862,
+        "to": 862,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 863,
+        "to": 869,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 870,
+        "to": 879,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 880,
+        "to": 885,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 886,
+        "to": 1000,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 1001,
+        "to": 2355,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2356,
+        "to": 2357,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2358,
+        "to": 2384,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2385,
+        "to": 2389,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2390,
+        "to": 2395,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2396,
+        "to": 2397,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2398,
+        "to": 2399,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2400,
+        "to": 2400,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2401,
+        "to": 2404,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2405,
+        "to": 2407,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2408,
+        "to": 2544,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2545,
+        "to": 2554,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 2555,
+        "to": 2627,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2628,
+        "to": 2628,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 2629,
+        "to": 2629,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2630,
+        "to": 2639,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 2640,
+        "to": 2816,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2817,
+        "to": 2817,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2818,
+        "to": 2820,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2821,
+        "to": 2829,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2830,
+        "to": 2830,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2831,
+        "to": 2841,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2842,
+        "to": 2872,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2873,
+        "to": 2873,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2874,
+        "to": 2877,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 2878,
+        "to": 2889,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 2890,
+        "to": 2999,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3000,
+        "to": 3035,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3036,
+        "to": 3038,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3039,
+        "to": 3044,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3045,
+        "to": 3045,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3046,
+        "to": 3046,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3047,
+        "to": 3049,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3050,
+        "to": 3058,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3059,
+        "to": 3059,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3060,
+        "to": 3060,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3061,
+        "to": 3064,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3065,
+        "to": 3074,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3075,
+        "to": 3076,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3077,
+        "to": 3098,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3099,
+        "to": 3099,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3100,
+        "to": 3292,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3293,
+        "to": 3302,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3303,
+        "to": 3308,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3309,
+        "to": 3319,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3320,
+        "to": 3333,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3334,
+        "to": 3337,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3338,
+        "to": 3339,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3340,
+        "to": 3758,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3759,
+        "to": 3760,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 3761,
+        "to": 3764,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 3765,
+        "to": 3999,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 4000,
+        "to": 4416,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 4417,
+        "to": 4417,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4418,
+        "to": 4427,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 4428,
+        "to": 4473,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4474,
+        "to": 4476,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 4477,
+        "to": 4478,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4479,
+        "to": 4485,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 4486,
+        "to": 4491,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4492,
+        "to": 4492,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 4493,
+        "to": 4493,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4494,
+        "to": 4494,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 4495,
+        "to": 4497,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4498,
+        "to": 4719,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 4720,
+        "to": 4722,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4723,
+        "to": 4723,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 4724,
+        "to": 4734,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4735,
+        "to": 4736,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 4737,
+        "to": 4822,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 4823,
+        "to": 4823,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4824,
+        "to": 4824,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 4825,
+        "to": 4827,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 4828,
+        "to": 4828,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 4829,
+        "to": 4829,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 4830,
+        "to": 5431,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 5432,
+        "to": 5450,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 5451,
+        "to": 5654,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 5655,
+        "to": 5669,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 5670,
+        "to": 5679,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 5680,
+        "to": 5699,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 5700,
+        "to": 5709,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 5710,
+        "to": 5722,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 5723,
+        "to": 5724,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 5725,
+        "to": 5730,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 5731,
+        "to": 5731,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 5732,
+        "to": 5732,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 5733,
+        "to": 5799,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 5800,
+        "to": 6043,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6044,
+        "to": 6044,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6045,
+        "to": 6256,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6257,
+        "to": 6270,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 6271,
+        "to": 6316,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6317,
+        "to": 6349,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 6350,
+        "to": 6353,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6354,
+        "to": 6356,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 6357,
+        "to": 6394,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6395,
+        "to": 6400,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 6401,
+        "to": 6430,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6431,
+        "to": 6431,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6432,
+        "to": 6433,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6434,
+        "to": 6440,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6441,
+        "to": 6441,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 6442,
+        "to": 6444,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6445,
+        "to": 6459,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 6460,
+        "to": 6467,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6468,
+        "to": 6469,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6470,
+        "to": 6471,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6472,
+        "to": 6472,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6473,
+        "to": 6506,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6507,
+        "to": 6508,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6509,
+        "to": 6509,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6510,
+        "to": 6536,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6537,
+        "to": 6537,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 6538,
+        "to": 6555,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6556,
+        "to": 6573,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6574,
+        "to": 6602,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6603,
+        "to": 6607,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 6608,
+        "to": 6641,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6642,
+        "to": 6724,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 6725,
+        "to": 6750,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6751,
+        "to": 6764,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 6765,
+        "to": 6765,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6766,
+        "to": 6797,
+        "zone": 1,
+        "rating": 1.622
+      },
+      {
+        "from": 6798,
+        "to": 6799,
+        "zone": 2,
+        "rating": 1.536
+      },
+      {
+        "from": 6800,
+        "to": 6999,
+        "zone": 3,
+        "rating": 1.382
+      },
+      {
+        "from": 7000,
+        "to": 8999,
+        "zone": 4,
+        "rating": 1.185
+      },
+      {
+        "from": 9000,
+        "to": 9999,
+        "zone": 3,
+        "rating": 1.382
+      }
+    ],
+    "rounding": "down"
+  }
+}
