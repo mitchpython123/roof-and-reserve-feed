@@ -1,0 +1,10 @@
+{
+  "notice": "Processed by Roof & Reserve (roofandreserve.com) from public AEMO and market data. Copyright Roof & Reserve. Provided for the Roof & Reserve website. Republishing or commercial reuse requires written permission.",
+  "price": 39.75,
+  "as_of": "2026-11-20",
+  "trades": 21,
+  "currency": "AUD",
+  "source": "Demand Manager STC spot trades",
+  "source_url": "https://www.demandmanager.com.au/graphs/new_prices.php",
+  "fetched_at": "2026-11-25T22:07:45+10:00"
+}
